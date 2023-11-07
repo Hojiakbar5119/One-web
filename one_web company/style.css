@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-t-body: 'Arkhip';
+    --main-text: 'Gilroy';
+}
+
+/* adding fontstyle */
+
+@font-face {
+    font-family: 'Arkhip';
+    src: url('./fonts/Arkhip-Regular.woff2') format('woff2'),
+        url('./fonts/Arkhip-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/') format('woff2'),
+        url('./fonts/Gilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('./fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('./fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-SemiBold.woff2') format('woff2'),
+        url('./fonts/Gilroy-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('./fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* adding fontstyle */
+
+
+
+h1 {
+    font-family: var(--main-t-body);
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.container {
+    position: relative;
+    width: 1920px;
+    height: 3075px;
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow-x:hidden; */
+}
+
+.wrapper {
+    width: 90vw;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+    /* position: absolute; */
+    background-color: #F9F6F4;
+
+    z-index: 1000;
+    height: 2795px;
+
+    padding: 60px 100px;
+
+}
+
+
+
+
+.wrapper span {
+    color: #451F18;
+    font-family: var(--main-t-body);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+ul li {
+    font-family: var(--main-text);
+    color: #451F18;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+
+
+/* these are background radial image */
+
+.circle:nth-child(1) {
+    position: absolute;
+    height: 1885px;
+    left: -293px;
+    top: -208px;
+    width: 1885px;
+    opacity: 80%;
+    border-radius: 1885px;
+    background-image: radial-gradient(50% 50% at 48.94% 49.99%, #C89077 0%, rgba(253, 252, 251, 0.00) 100%);
+    /* background: radial-gradient(50% 50% at 50% 50%, #C89077 0%, rgba(253, 252, 251, 0.00) 100%); */
+}
+
+.circle:nth-child(2) {
+    position: absolute;
+    width: 2013px;
+    opacity: 80%;
+    height: 2013px;
+    border-radius: 2013px;
+    top: 154px;
+    left: 120px;
+    background: radial-gradient(50% 50% at 50% 50%, #ECE2DF 0%, rgba(234, 223, 223, 0.00) 100%);
+}
+
+.circle:nth-child(3) {
+    position: absolute;
+    opacity: 80%;
+    height: 2013px;
+    width: 2013px;
+    border-radius: 2013px;
+    top: 749px;
+    left: -270px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #ECE2DF 0%, rgba(234, 223, 223, 0.00) 100%);
+}
+
+.circle:nth-child(4) {
+    position: absolute;
+    top: 880px;
+    width: 1986px;
+    height: 1986px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #EADFDF 0%, rgba(236, 226, 223, 0.00) 100%);
+    /* background-image: radial-gradient(50% 50% at 48.94% 49.99%, #C89077 0%, rgba(253, 252, 251, 0.00) 100%); */
+    ;
+}
