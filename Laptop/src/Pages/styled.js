@@ -64,3 +64,45 @@ export const Title = styled.div`
     line-height: 20px; /* 133.333% */
   }
 `;
+
+export const ContainerBs = styled.div`
+  /* display: flex; */
+  text-align: center;
+  /* height: 730px; */
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 64px;
+  background-color: #F7F8FA;
+`;
+export const TitleBe = styled.div`
+  h1 {
+    color: var(--Text-blue);
+    text-align: center;
+
+    /* Style 1 / Display Bold */
+    font-family: inherit;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px; /* 106.25% */
+  }
+  p {
+    color: rgba(26, 35, 110, 0.7);
+    text-align: center;
+
+    margin-top: 20px;
+    /* Style 1 / Title 3 Medium */
+    font-family: inherit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 31.2px */
+  }
+`;
+export const Textfarmes = styled.div`
+display: flex;
+gap: 30px;
+`

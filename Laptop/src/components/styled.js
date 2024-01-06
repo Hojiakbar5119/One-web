@@ -45,11 +45,65 @@ export const Button = styled.button`
   border-radius: 6px;
   margin: 0 8px;
   border: 1px solid var(--Elements-Light-Border, rgba(0, 0, 0, 0.1));
-  background-color: ${props => props.$color||"white"};
-  color: #1A236E;
+  background-color: ${(props) => props.$color || "white"};
+  color: var(--Text-blue);
   font-family: inherit;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
+`;
+
+export const Frame = styled.div`
+  width: 255px;
+  height: 272px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    margin: 32px 0  16px 0;
+    color: var(--Text-blue);
+    text-align: center;
+
+    /* Style 1 / Title 2 Medium */
+    font-family: inherit;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 36.4px */
+  }
+  p {
+    color: rgba(26, 35, 110, 0.4);
+    text-align: center;
+
+    /* Style 1 / Body 1 Regular */
+    font-family: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+  }
+`;
+
+export const Circle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  color: var(--Text-blue);
+  /* Style 1 / Title 2 Medium */
+  font-family: inherit;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 36.4px */
+
+  border-radius: 40px;
+  background: var(--white-100, #fff);
+
+  /* Shadow 2 */
+  box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 4px 7px 40px 2px rgba(0, 0, 0, 0.1); */
 `;
