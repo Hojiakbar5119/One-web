@@ -22,7 +22,7 @@ export const Container = styled.div`
   /* border: 1px solid blue; */
 `;
 export const Title = styled.div`
-  z-index: 1000;
+  z-index: 1;
   position: absolute;
   display: block;
   text-align: center;
@@ -58,7 +58,7 @@ export const Title = styled.div`
 
     /* Style 1 / Body 2 Medium */
     font-family: inherit;
-    font-size: 15px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 133.333% */

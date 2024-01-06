@@ -40,17 +40,43 @@ export const NavigationMenu = styled.ul`
     line-height: 24px;
   }
 `;
+
+export const Input = styled.input`
+  padding: 12px 24px;
+  border-radius: 6px;
+  margin: 0 8px;
+  border: 1px solid var(--Elements-Light-Border, rgba(0, 0, 0, 0.1));
+  background-color: ${(props) => props.color || "white"};
+  color: var(--Text-blue);
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+
+  &::placeholder {
+    color: var(--black-20, rgba(0, 0, 0, 0.2));
+
+    /* Style 1 / Body 1 Regular */
+    font-family: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+  }
+`;
+
 export const Button = styled.button`
   padding: 12px 24px;
   border-radius: 6px;
   margin: 0 8px;
   border: 1px solid var(--Elements-Light-Border, rgba(0, 0, 0, 0.1));
-  background-color: ${(props) => props.$color || "white"};
+  background-color: ${(props) => props.color || "white"};
   color: var(--Text-blue);
   font-family: inherit;
-  font-size: 15px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: ${(props) => (props.boldtext ? "600" : "500")};
   line-height: 20px;
 `;
 
@@ -61,7 +87,7 @@ export const Frame = styled.div`
   justify-content: center;
   flex-direction: column;
   h1 {
-    margin: 32px 0  16px 0;
+    margin: 32px 0 16px 0;
     color: var(--Text-blue);
     text-align: center;
 

@@ -15,7 +15,7 @@ const Desktop = () => {
             ценам
           </p>
           <div>
-            <Button $color="#FCDF00">Оставить заявку</Button>
+            <Button color="#FCDF00">Оставить заявку</Button>
             <Button>Узнать подробности</Button>
           </div>
           <h5>
