@@ -1,0 +1,23 @@
+@import url("assets/font/stylesheet.css");
+
+:root {
+  font-family: 'Stem';
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #1A236E;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --Elements-Light-Border: #0000001A
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
