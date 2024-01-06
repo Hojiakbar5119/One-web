@@ -10,16 +10,15 @@ export const Container = styled.div`
   }
 `;
 
-export const Left = styled.div`
+export const Lefta = styled.div`
   display: flex;
   gap: 40px;
   align-items: center;
   div {
-    display: block;
+    /* display: block; */
     p {
       color: rgba(26, 35, 110, 0.7);
       text-align: right;
-
       /* Style 1 / Caption */
       font-family: inherit;
       font-size: 13px;
@@ -44,9 +43,10 @@ export const NavigationMenu = styled.ul`
 export const Button = styled.button`
   padding: 12px 24px;
   border-radius: 6px;
+  margin: 0 8px;
   border: 1px solid var(--Elements-Light-Border, rgba(0, 0, 0, 0.1));
-  background-color: transparent;
-  color: inherit;
+  background-color: ${props => props.$color||"white"};
+  color: #1A236E;
   font-family: inherit;
   font-size: 15px;
   font-style: normal;

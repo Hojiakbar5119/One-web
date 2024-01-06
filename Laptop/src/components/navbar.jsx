@@ -1,12 +1,12 @@
 import React from "react";
-import { Container, NavigationMenu, Button, Left } from "./styled";
+import { Container, NavigationMenu, Button, Lefta } from "./styled";
 
 const Navbar = () => {
   return (
     <>
       <Container>
         <h1>Ремонт техники</h1>
-        <Left>
+        <Lefta>
           <NavigationMenu>
             <li>Преимущества</li>
             <li>Команда</li>
@@ -17,7 +17,7 @@ const Navbar = () => {
             <h3>+7 495 123-45-67</h3>
           </div>
           <Button>Заказать звонок</Button>
-        </Left>
+        </Lefta>
       </Container>
     </>
   );
