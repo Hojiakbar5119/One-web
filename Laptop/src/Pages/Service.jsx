@@ -27,7 +27,7 @@ const Servicetext = [
 const Service = () => {
   return (
     <>
-      <ContainerBs Backcolor>
+      <ContainerBs Backcolor="#1A236E">
         <TitleBe whitetext>
           <h1>Пакеты услуг</h1>
           <p>Выберите подходящий пакет услуг</p>

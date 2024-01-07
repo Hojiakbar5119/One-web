@@ -74,7 +74,7 @@ export const ContainerBs = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 64px;
-  background-color: ${(props) => (props.Backcolor ? "#1A246F" : " #f7f8fa")};
+  background-color: ${(props) => props.Backcolor || " #fff"};
 `;
 export const TitleBe = styled.div`
   h1 {
@@ -110,7 +110,7 @@ export const Textfarmes = styled.div`
 `;
 
 export const Partnerslogo = styled.img`
-margin-top: 64px;
+  margin-top: 64px;
   max-width: 255px;
   height: auto;
   padding: 5px 30px;

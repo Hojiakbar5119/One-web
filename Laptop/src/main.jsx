@@ -7,6 +7,8 @@ import FormDesktop from './Pages/FormDesktop'
 import Teams from './Pages/Teams'
 import Service from './Pages/Service'
 import Partners from './Pages/Partners'
+import FormPage from './Pages/FormPage'
+import Media from './Pages/Media'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,5 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Teams></Teams>
     <Service></Service>
     <Partners></Partners>
+    <FormPage></FormPage>
+    <Media></Media>
   </React.StrictMode>,
 )

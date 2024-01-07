@@ -28,7 +28,7 @@ const cards = [
 const Benefits = () => {
   return (
     <>
-      <ContainerBs>
+      <ContainerBs Backcolor="#f7f8fa">
         <TitleBe>
           <h1>Нам доверяют</h1>
           <p>

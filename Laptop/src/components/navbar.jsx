@@ -8,9 +8,9 @@ const Navbar = () => {
         <h1>Ремонт техники</h1>
         <Lefta>
           <NavigationMenu>
-            <li>Преимущества</li>
-            <li>Команда</li>
-            <li>Услуги</li>
+            <li><a href="" target="_self" rel="noopener noreferrer">Преимущества</a></li>
+            <li><a href="" target="_self" rel="noopener noreferrer">Команда</a></li>
+            <li><a href="" target="_self" rel="noopener noreferrer">Услуги</a></li>
           </NavigationMenu>
           <div>
             <p>Cлужба продаж</p>

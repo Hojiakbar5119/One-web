@@ -34,10 +34,14 @@ export const NavigationMenu = styled.ul`
   gap: 24px;
   list-style: none;
   li {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      color: rgba(26, 35, 110, 0.70);
+    }
   }
 `;
 
@@ -72,14 +76,14 @@ export const Button = styled.button`
   margin: 0 8px;
   border: 1px solid var(--Elements-Light-Border, rgba(0, 0, 0, 0.1));
   background-color: ${(props) => props.color || "white"};
-  color: var(--Text-blue);
+  color: ${(props) => (props.textcolor ? "white" : "var(--Text-blue)")};
   font-family: inherit;
   font-size: 18px;
   font-style: normal;
   font-weight: ${(props) => (props.boldtext ? "600" : "500")};
   line-height: 20px;
 
-  &:active{
+  &:active {
     scale: 0.98;
   }
 `;
@@ -97,7 +101,7 @@ export const Frame = styled.div`
 
     /* Style 1 / Title 2 Medium */
     font-family: inherit;
-    font-size: ${(props=>(props.textsize?"24px":"28px"))};
+    font-size: ${(props) => (props.textsize ? "24px" : "28px")};
     font-style: normal;
     font-weight: 500;
     line-height: 130%; /* 36.4px */
@@ -151,7 +155,7 @@ export const Carddes = styled.div`
   h1 {
     color: var(--Text-blue);
     text-align: center;
-  
+
     /* Style 1 / Title 1 Bold */
     font-family: inherit;
     font-size: 48px;
@@ -179,10 +183,10 @@ export const Carddes = styled.div`
     font-weight: 400;
     line-height: 20px; /* 133.333% */
   }
-  Button{
+  Button {
     width: 100%;
     text-align: center;
-    margin: 0 ;
+    margin: 0;
     font-size: 15px;
   }
 `;
