@@ -63,6 +63,12 @@ export const Title = styled.div`
     font-weight: 400;
     line-height: 20px; /* 133.333% */
   }
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 8px 0;
+  }
 `;
 
 export const ContainerBs = styled.div`
@@ -117,4 +123,21 @@ export const Partnerslogo = styled.img`
   border-radius: 8px;
   border: 2px solid var(--black-10, rgba(0, 0, 0, 0.1));
   background: url(<path-to-image>), lightgray 50% / cover no-repeat, #fff;
+`;
+
+export const Mediadesign = styled.div`
+
+padding: 80px 165px;
+display: flex;
+gap: 30px;
+justify-content: center;
+align-items: center;
+img{
+  border-radius: 25px;
+}
+div{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 `;

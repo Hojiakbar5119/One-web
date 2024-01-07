@@ -40,10 +40,31 @@ export const NavigationMenu = styled.ul`
       font-style: normal;
       font-weight: 500;
       line-height: 24px;
-      color: rgba(26, 35, 110, 0.70);
+      color: rgba(26, 35, 110, 0.7);
     }
   }
 `;
+export const Radio = styled.input.attrs({ type: "radio" })`
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: transparent;
+
+  &:checked::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #FCDF00;
+    border-radius: 50%;
+    
+  }
+`;
+
+
 
 export const Input = styled.input`
   padding: 12px 24px;
@@ -68,6 +89,17 @@ export const Input = styled.input`
     font-weight: 700;
     line-height: 24px; /* 133.333% */
   }
+`;
+
+export const Label = styled.label`
+  color: #fff;
+
+  /* Style 1 / Body 1 Regular */
+  font-family: inherit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 133.333% */
 `;
 
 export const Button = styled.button`
