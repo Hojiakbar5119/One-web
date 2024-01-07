@@ -66,7 +66,6 @@ export const Title = styled.div`
 `;
 
 export const ContainerBs = styled.div`
-  /* display: flex; */
   text-align: center;
   /* height: 730px; */
   padding: 120px 0;
@@ -106,4 +105,16 @@ export const TitleBe = styled.div`
 export const Textfarmes = styled.div`
   display: flex;
   gap: 30px;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Partnerslogo = styled.img`
+margin-top: 64px;
+  max-width: 255px;
+  height: auto;
+  padding: 5px 30px;
+  border-radius: 8px;
+  border: 2px solid var(--black-10, rgba(0, 0, 0, 0.1));
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat, #fff;
 `;
