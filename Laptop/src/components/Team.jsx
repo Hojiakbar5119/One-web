@@ -1,6 +1,7 @@
 import React from "react";
 import { Frame } from "./styled";
 
+
 const Team = ({ images, fullname, specialize }) => {
   return (
     <>
