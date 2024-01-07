@@ -78,6 +78,10 @@ export const Button = styled.button`
   font-style: normal;
   font-weight: ${(props) => (props.boldtext ? "600" : "500")};
   line-height: 20px;
+
+  &:active{
+    scale: 0.98;
+  }
 `;
 
 export const Frame = styled.div`
