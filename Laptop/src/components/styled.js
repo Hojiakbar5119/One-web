@@ -133,3 +133,48 @@ export const Circle = styled.div`
   box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.1);
   /* box-shadow: 4px 7px 40px 2px rgba(0, 0, 0, 0.1); */
 `;
+export const Carddes = styled.div`
+  width: 360px;
+  height: 388px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #fff;
+  h1 {
+    color: var(--Text-blue);
+    text-align: center;
+
+    /* Style 1 / Title 1 Bold */
+    font-family: inherit;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px; /* 108.333% */
+  }
+  h3 {
+    color: var(--Text-blue);
+    text-align: center;
+
+    /* Style 1 / Body 1 Bold */
+    font-family: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+  }
+  p {
+    color: rgba(26, 35, 110, 0.7);
+    text-align: center;
+    font-family: inherit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+  }
+  Button{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    /* padding: 12px 0; */
+    margin: 0 ;
+  }
+`;

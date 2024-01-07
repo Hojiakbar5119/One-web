@@ -75,11 +75,11 @@ export const ContainerBs = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 64px;
-  background-color: #F7F8FA;
+  background-color: ${(props) => (props.Backcolor ? "#1A246F" : " #f7f8fa")};
 `;
 export const TitleBe = styled.div`
   h1 {
-    color: var(--Text-blue);
+    color: ${(props) => (props.whitetext ? "#FFF" : "#1A246F")};
     text-align: center;
 
     /* Style 1 / Display Bold */
@@ -90,7 +90,7 @@ export const TitleBe = styled.div`
     line-height: 68px; /* 106.25% */
   }
   p {
-    color: rgba(26, 35, 110, 0.7);
+    color: ${(props) => (props.whitetext ? "rgba(255, 255, 255, 0.70)" : "rgba(26, 35, 110, 0.7)")};
     text-align: center;
 
     margin-top: 20px;
@@ -103,6 +103,6 @@ export const TitleBe = styled.div`
   }
 `;
 export const Textfarmes = styled.div`
-display: flex;
-gap: 30px;
-`
+  display: flex;
+  gap: 30px;
+`;
