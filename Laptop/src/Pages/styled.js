@@ -90,7 +90,8 @@ export const TitleBe = styled.div`
     line-height: 68px; /* 106.25% */
   }
   p {
-    color: ${(props) => (props.whitetext ? "rgba(255, 255, 255, 0.70)" : "rgba(26, 35, 110, 0.7)")};
+    color: ${(props) =>
+      props.whitetext ? "rgba(255, 255, 255, 0.70)" : "rgba(26, 35, 110, 0.7)"};
     text-align: center;
 
     margin-top: 20px;

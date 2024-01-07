@@ -13,8 +13,8 @@ const FormDesktop = () => {
             Идейные соображения высшего порядка, а также постоянный <br />
             количественный рост и сфера нашей активности
           </p>
-          <form action="#" method="post">
-            <Input type="text" placeholder="+7 (000) 000-0000"/>
+          <form action="./" method="post">
+            <Input type="number" placeholder="+998 (00) 000-00-00"/>
             <Button boldtext color="#FCDF00">Оставить заявку</Button>
           </form>
           <h5>

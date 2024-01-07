@@ -93,7 +93,7 @@ export const Frame = styled.div`
 
     /* Style 1 / Title 2 Medium */
     font-family: inherit;
-    font-size: 28px;
+    font-size: ${(props=>(props.textsize?"24px":"28px"))};
     font-style: normal;
     font-weight: 500;
     line-height: 130%; /* 36.4px */
@@ -136,13 +136,18 @@ export const Circle = styled.div`
 export const Carddes = styled.div`
   width: 360px;
   height: 388px;
-  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
   border-radius: 16px;
   background: #fff;
+  padding: 32px 24px;
+
   h1 {
     color: var(--Text-blue);
     text-align: center;
-
+  
     /* Style 1 / Title 1 Bold */
     font-family: inherit;
     font-size: 48px;
@@ -153,7 +158,7 @@ export const Carddes = styled.div`
   h3 {
     color: var(--Text-blue);
     text-align: center;
-
+    margin: 24px 0 8px 0;
     /* Style 1 / Body 1 Bold */
     font-family: inherit;
     font-size: 18px;
@@ -171,10 +176,9 @@ export const Carddes = styled.div`
     line-height: 20px; /* 133.333% */
   }
   Button{
-    display: flex;
     width: 100%;
     text-align: center;
-    /* padding: 12px 0; */
     margin: 0 ;
+    font-size: 15px;
   }
 `;
