@@ -58,13 +58,10 @@ export const Radio = styled.input.attrs({ type: "radio" })`
     content: "";
     width: 12px;
     height: 12px;
-    background-color: #FCDF00;
+    background-color: #fcdf00;
     border-radius: 50%;
-    
   }
 `;
-
-
 
 export const Input = styled.input`
   padding: 12px 24px;
@@ -221,4 +218,11 @@ export const Carddes = styled.div`
     margin: 0;
     font-size: 15px;
   }
+`;
+export const Form = styled.form`
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  width: 540px;
 `;

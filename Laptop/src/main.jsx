@@ -10,6 +10,7 @@ import Partners from './Pages/Partners'
 import FormPage from './Pages/FormPage'
 import Media from './Pages/Media'
 import Formfull from './Pages/Formfull'
+import Contacts from './Pages/Contacts'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -23,5 +24,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <FormPage></FormPage>
     <Media></Media>
     <Formfull></Formfull>
+    <Contacts></Contacts>
   </React.StrictMode>,
 )

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Title } from "./styled";
-import { Button, Input, Label, Radio } from "../components/styled";
+import { Button, Input, Label, Radio, Form } from "../components/styled";
 import desktopimg from "../assets/img/Desktop.webp";
 
 const Formfull = () => {
@@ -9,7 +9,7 @@ const Formfull = () => {
       <Title>
         <h1>Закажите ремонт техники</h1>
         <p>Заполните форму и закажите полис</p>
-        <form action="#">
+        <Form action="#">
           <Input placeholder="Ваша имя" type="text" required />
           <Input type="number" placeholder="+998 (00) 000-00-00" required />
           <Input type="email" placeholder="E-mail" required />
@@ -32,7 +32,7 @@ const Formfull = () => {
             <Label for="javascript">Страхование жизни</Label>
           </div>
           <Button color="#FCDF00">Заказать полис</Button>
-        </form>
+        </Form>
       </Title>
       <img src={desktopimg} alt={desktopimg} />
     </Container>
