@@ -63,7 +63,7 @@ export const Title = styled.div`
     font-weight: 400;
     line-height: 20px; /* 133.333% */
   }
-  div{
+  div {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -126,18 +126,32 @@ export const Partnerslogo = styled.img`
 `;
 
 export const Mediadesign = styled.div`
-
-padding: 80px 165px;
-display: flex;
-gap: 30px;
-justify-content: center;
-align-items: center;
-img{
-  border-radius: 25px;
-}
-div{
+  padding: 80px 165px;
   display: flex;
-  flex-direction: column;
   gap: 30px;
-}
+  justify-content: center;
+  align-items: center;
+  img {
+    border-radius: 25px;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+`;
+export const Contactsdesign = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    background-color: var( --Text-blue);
+    color: white;
+    width: 50%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
 `;
